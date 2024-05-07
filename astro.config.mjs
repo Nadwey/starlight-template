@@ -7,7 +7,7 @@ export default defineConfig({
         starlight({
             title: "NadArenas",
             social: {
-                github: "https://github.com/withastro/starlight",
+                github: "https://github.com/Nadwey/NadArenas",
             },
             customCss: [
                 // Relative path to your custom CSS file
