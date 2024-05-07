@@ -2,7 +2,7 @@
 title: "Resetting Arenas"
 ---
 
-![Arena loading](/src/assets/docs/reference/resetting-arenas/arena-loading.png)
+![Arena loading](../../../assets/docs/reference/resetting-arenas/arena-loading.png)
 
 :::note
 

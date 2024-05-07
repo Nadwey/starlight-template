@@ -2,6 +2,9 @@
 title: "Customizing Arenas"
 ---
 
+import { Image } from 'astro:assets';
+import forest1DisplayNameImg from '../../../assets/docs/guides/customizing-arenas/forest1-display-name.png';
+
 ## Changing the Display Name
 
 To change the display name of an arena use the following command:
@@ -18,7 +21,7 @@ For example, the command:
 /nda arena displayName forest1 &a&lForest 1
 ```
 
-Will change the display name of the arena `forest1` to <img style="vertical-align: middle; display: inline;" alt="green and bold Forest 1 text" src="/src/assets/docs/guides/customizing-arenas/forest1-display-name.png" />
+Will change the display name of the arena `forest1` to <Image style="vertical-align: middle; display: inline;" alt="green and bold Forest 1 text" src={forest1DisplayNameImg} />
 
 ## Changing the Description
 
@@ -38,7 +41,7 @@ For example, the command
 
 Will produce the following description:
 
-![Forest 1 description](/src/assets/docs/guides/customizing-arenas/forest1-description.png)
+![Forest 1 description](../../../assets/docs/guides/customizing-arenas/forest1-description.png)
 
 ## Changing the Item
 
