@@ -1,48 +1,48 @@
 /* Dark mode colors. */
 :root {
-	--sl-color-accent-low: #00273d;
-	--sl-color-accent: #0071a7;
-	--sl-color-accent-high: #92d1fe;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #eeeeee;
-	--sl-color-gray-2: #c2c2c2;
-	--sl-color-gray-3: #8b8b8b;
-	--sl-color-gray-4: #585858;
-	--sl-color-gray-5: #383838;
-	--sl-color-gray-6: #272727;
-	--sl-color-gray-7: #101010;
-	--sl-color-black: #181818;
+    --sl-color-accent-low: #00273d;
+    --sl-color-accent: #0071a7;
+    --sl-color-accent-high: #92d1fe;
+    --sl-color-white: #ffffff;
+    --sl-color-gray-1: #eeeeee;
+    --sl-color-gray-2: #c2c2c2;
+    --sl-color-gray-3: #8b8b8b;
+    --sl-color-gray-4: #585858;
+    --sl-color-gray-5: #383838;
+    --sl-color-gray-6: #272727;
+    --sl-color-gray-7: #101010;
+    --sl-color-black: #181818;
 
     --sl-color-bg: #000000;
     --sl-color-bg-nav: #0f0f12;
     --sl-color-bg-sidebar: #0f0f12;
 
-	--ec-frm-edBg: #0f0f12 !important;
-	--ec-brdRad: 0.5rem !important;
+    --ec-frm-edBg: #0f0f12 !important;
+    --ec-brdRad: 0.5rem !important;
 
-	--sl-color-bg-inline-code: #15151a !important;
+    --sl-color-bg-inline-code: #15151a !important;
 }
 
 /* Light mode colors. */
-:root[data-theme='light'] {
-	--sl-color-accent-low: #b0deff;
-	--sl-color-accent: #0073aa;
-	--sl-color-accent-high: #003653;
-	--sl-color-white: #181818;
-	--sl-color-gray-1: #272727;
-	--sl-color-gray-2: #383838;
-	--sl-color-gray-3: #585858;
-	--sl-color-gray-4: #8b8b8b;
-	--sl-color-gray-5: #c2c2c2;
-	--sl-color-gray-6: #eeeeee;
-	--sl-color-gray-7: #f3f3f3;
-	--sl-color-black: #ffffff;
+:root[data-theme="light"] {
+    --sl-color-accent-low: #b0deff;
+    --sl-color-accent: #0073aa;
+    --sl-color-accent-high: #003653;
+    --sl-color-white: #181818;
+    --sl-color-gray-1: #272727;
+    --sl-color-gray-2: #383838;
+    --sl-color-gray-3: #585858;
+    --sl-color-gray-4: #8b8b8b;
+    --sl-color-gray-5: #c2c2c2;
+    --sl-color-gray-6: #eeeeee;
+    --sl-color-gray-7: #f3f3f3;
+    --sl-color-black: #ffffff;
 
     --sl-color-bg: #ffffff;
     --sl-color-bg-nav: #ffffff;
     --sl-color-bg-sidebar: #ffffff;
 
-	--sl-color-bg-inline-code: #eaeaea !important;
+    --sl-color-bg-inline-code: #eaeaea !important;
 }
 
 .site-title {
@@ -58,7 +58,7 @@
 }
 
 starlight-file-tree {
-	background-color: var(--sl-color-gray-7) !important;
-	border-color: var(--ec-brdCol) !important;
-	border-radius: var(--ec-brdRad) !important;
+    background-color: var(--sl-color-gray-7) !important;
+    border-color: var(--ec-brdCol) !important;
+    border-radius: var(--ec-brdRad) !important;
 }

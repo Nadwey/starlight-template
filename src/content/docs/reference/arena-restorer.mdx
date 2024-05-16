@@ -1,16 +1,19 @@
 ---
-title: "Resetting Arenas"
+title: "Arena Restorer"
 ---
 
 import { FileTree } from "@astrojs/starlight/components";
 
-![Arena loading](../../../assets/docs/reference/resetting-arenas/arena-loading.gif)
+![Arena loading](../../../assets/docs/reference/arena-restorer/arena-loading.gif)
 
 :::note
 
-Arena resetting is only available if you have it enabled in the configuration.
+Arena Restorer can be enabled or disabled when creating an arena.  
+Or using the following command:
 
-TODO
+```mcfunction
+/nda arena restorer setEnabled <arena> <true|false>
+```
 
 :::
 
@@ -19,7 +22,7 @@ An arena can be reset after, for example, a round has ended.
 To force reset an arena you can use the following command:
 
 ```text
-/nda arena load <arena>
+/nda arena restorer load <arena>
 ```
 
 ## The load process
@@ -38,4 +41,8 @@ The load process works by simply replacing all blocks in the arena with the bloc
 
 </FileTree>
 
-By default 250 blocks are loaded every tick, this can be changed in the arena settings. (TODO)
+By default 250 blocks are loaded every tick, this can be changed by using the following command:
+
+```mcfunction
+/nda arena restorer setBlocksPerTick <arena> <blocks>
+```

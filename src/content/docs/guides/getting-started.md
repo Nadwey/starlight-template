@@ -15,5 +15,5 @@ Contributions are welcome btw :D
 
 ## Requirements
 
-- [PaperMC](https://papermc.io/) as the server engine, running on **Java 21** or higher.
-- [WorldEdit](https://dev.bukkit.org/projects/worldedit)
+-   [PaperMC](https://papermc.io/) as the server engine, running on **Java 21** or higher.
+-   [WorldEdit](https://dev.bukkit.org/projects/worldedit)

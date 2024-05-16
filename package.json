@@ -1,22 +1,23 @@
 {
-  "name": "nadarenas-docs",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.6.0",
-    "@astrojs/starlight": "^0.22.2",
-    "astro": "^4.8.2",
-    "sharp": "^0.33.3",
-    "typescript": "^5.4.5"
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5"
-  }
+    "name": "nadarenas-docs",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "prettier": "prettier --write ."
+    },
+    "dependencies": {
+        "@astrojs/check": "^0.7.0",
+        "@astrojs/starlight": "^0.22.3",
+        "astro": "^4.8.4",
+        "sharp": "^0.33.4",
+        "typescript": "^5.4.5"
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5"
+    }
 }
