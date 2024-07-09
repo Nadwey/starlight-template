@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,17 +13,29 @@ export default defineConfig({
             customCss: [
                 // Relative path to your custom CSS file
                 "./src/styles/custom.css",
+                "./src/fonts/font-face.css",
             ],
             sidebar: [
                 {
-                    label: "Guides",
-                    autogenerate: { directory: "guides" },
+                    label: "👋 Welcome",
+                    link: "/",
                 },
                 {
-                    label: "Reference",
-                    autogenerate: { directory: "reference" },
+                    label: "✨ Features",
+                    link: "/features",
+                },
+                {
+                    label: "Configuration",
+                    autogenerate: { directory: "configuration" },
+                },
+                {
+                    label: "For Developers",
+                    autogenerate: { directory: "developers" },
                 },
             ],
+            expressiveCode: {
+                plugins: [pluginLineNumbers()]
+            }
         }),
     ],
 });

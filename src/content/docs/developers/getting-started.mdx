@@ -1,0 +1,110 @@
+---
+title: ☕ Getting Started
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
+Thank you for choosing NadArenas for your plugin!  
+This guide will help you get started with the development.
+
+:::danger
+
+This doesn't work yet.
+
+:::
+   
+## Adding NadArenas to your project
+
+To use NadArenas in your project, you need to add it as a dependency in your project.
+
+### Repository
+
+<Tabs syncKey="buildSystem">
+    <TabItem label="Gradle (KTS)">
+```kotlin
+maven("https://not.yet.nadwey.pl/something/something/public")
+```
+    </TabItem>
+    <TabItem label="Gradle (Groovy)">
+```groovy
+maven { url = "https://not.yet.nadwey.pl/something/something/public" }
+```
+
+    </TabItem>
+    <TabItem label="Maven">
+
+```xml
+<repository>
+    <id>nadarenas-repo</id>
+    <url>https://not.yet.nadwey.pl/something/something/public</url>
+</repository>
+```
+
+    </TabItem>
+
+</Tabs>
+
+### Dependency
+
+<Tabs syncKey="buildSystem">
+    <TabItem label="Gradle (KTS)">
+```kotlin
+compileOnly("pl.nadwey.nadarenas-api:VERSION")
+compileOnly("pl.nadwey.nadarenas-bukkit:VERSION")
+```
+    </TabItem>
+    <TabItem label="Gradle (Groovy)">
+```groovy
+compileOnly "pl.nadwey.nadarenas-api:VERSION"
+compileOnly "pl.nadwey.nadarenas-bukkit:VERSION"
+```
+
+    </TabItem>
+    <TabItem label="Maven">
+
+```xml
+<dependency>
+    <groupId>com.nadwey</groupId>
+    <artifactId>nadarenas-api</artifactId>
+    <version>VERSION</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>com.nadwey</groupId>
+    <artifactId>nadarenas-bukkit</artifactId>
+    <version>VERSION</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+    </TabItem>
+
+</Tabs>
+
+### Plugin configuration
+
+You also need to add dependency inside `plugin.yml` or `paper-plugin.yml`.
+
+<Tabs>
+    <TabItem label="plugin.yml">
+```yml
+depend: [NadArenas]
+```
+    </TabItem>
+    <TabItem label="paper-plugin.yml">
+```yml
+dependencies:
+  server:
+    NadArenas:
+      load: BEFORE
+      required: true
+      join-classpath: true
+```
+
+    </TabItem>
+
+</Tabs>
+
+## Usage
+
+TODO

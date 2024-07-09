@@ -1,0 +1,76 @@
+---
+title: ⚙️ Storage Configuration Reference
+sidebar:
+    label: "⚙️ Reference"
+---
+
+
+## `storage.yml`
+
+The `storage.yml` file is used to configure how NadArenas should store data.  
+
+##### `storage-method`
+
+Available options: `SQLite` (default)
+
+See [Storage Methods](/configuration/storage/storage-methods) for more information.
+
+---
+
+##### `address`
+
+The address of the database server.
+
+Example: `localhost:3306`
+
+---
+
+##### `database`
+
+The name of the database to use.
+
+---
+
+##### `username`
+
+The username to use to connect to the database.
+
+---
+
+##### `password`
+
+The password to use to connect to the database.
+
+---
+
+##### `table-prefix`
+
+The prefix to use for all tables.
+
+Default: `nadarenas_`
+
+:::caution
+
+Please be careful with this option!
+
+:::
+
+### Example config
+
+```yaml title="storage.yml"
+# Storage method
+storage-method: MariaDB
+
+# The address of the database
+address: db2.example.com:3306
+
+# The name of the database to store data in
+database: nadarenas
+
+# Credentials for the database
+username: root
+password: 'boo123!'
+
+# The prefix for all NadArenas tables.
+table-prefix: nadarenas_
+```

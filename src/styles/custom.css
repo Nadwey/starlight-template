@@ -1,8 +1,10 @@
 /* Dark mode colors. */
 :root {
+    --__sl-font: RobotoFlex;
+
     --sl-color-accent-low: #00273d;
     --sl-color-accent: #0071a7;
-    --sl-color-accent-high: #92d1fe;
+    --sl-color-accent-high: #2666c5;
     --sl-color-white: #ffffff;
     --sl-color-gray-1: #eeeeee;
     --sl-color-gray-2: #c2c2c2;
@@ -11,11 +13,13 @@
     --sl-color-gray-5: #383838;
     --sl-color-gray-6: #272727;
     --sl-color-gray-7: #101010;
-    --sl-color-black: #181818;
+    --sl-color-black: #272727;
 
-    --sl-color-bg: #000000;
-    --sl-color-bg-nav: #0f0f12;
-    --sl-color-bg-sidebar: #0f0f12;
+    --sl-color-text-invert: white;
+
+    --sl-color-bg: #1d1d1f;
+    --sl-color-bg-nav: #1d1d1f;
+    --sl-color-bg-sidebar: #1d1d1f;
 
     --ec-frm-edBg: #0f0f12 !important;
     --ec-brdRad: 0.5rem !important;
@@ -61,4 +65,23 @@ starlight-file-tree {
     background-color: var(--sl-color-gray-7) !important;
     border-color: var(--ec-brdCol) !important;
     border-radius: var(--ec-brdRad) !important;
+}
+
+.action.primary {
+    background: rgb(0,95,133);
+    background: linear-gradient(162deg, rgba(0,95,133,1) 0%, rgba(184,0,160,1) 100%);
+
+    color: white;
+}
+
+[data-theme="light"]
+.action.primary {
+    background: rgb(0,57,80);
+    background: linear-gradient(162deg, rgba(0,57,80,1) 0%, rgba(126,0,110,1) 100%); 
+
+    color: white;
+}
+
+.starlight-aside {
+    border-radius: 0.5rem;
 }

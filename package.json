@@ -11,13 +11,14 @@
         "prettier": "prettier --write ."
     },
     "dependencies": {
-        "@astrojs/check": "^0.7.0",
-        "@astrojs/starlight": "^0.23.1",
-        "astro": "^4.9.1",
+        "@astrojs/check": "^0.8.0",
+        "@astrojs/starlight": "^0.25.0",
+        "@expressive-code/plugin-line-numbers": "^0.35.3",
+        "astro": "^4.11.5",
         "sharp": "^0.33.4",
-        "typescript": "^5.4.5"
+        "typescript": "^5.5.3"
     },
     "devDependencies": {
-        "prettier": "^3.2.5"
+        "prettier": "^3.3.2"
     }
 }
