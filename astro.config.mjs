@@ -6,12 +6,11 @@ import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 export default defineConfig({
     integrations: [
         starlight({
-            title: "NadArenas",
+            title: "Starlight Template",
             social: {
-                github: "https://github.com/Nadwey/NadArenas",
+                github: "https://github.com/Nadwey/starlight-template",
             },
             customCss: [
-                // Relative path to your custom CSS file
                 "./src/styles/custom.css",
                 "./src/fonts/font-face.css",
             ],
@@ -19,18 +18,6 @@ export default defineConfig({
                 {
                     label: "👋 Welcome",
                     link: "/",
-                },
-                {
-                    label: "✨ Features",
-                    link: "/features",
-                },
-                {
-                    label: "Configuration",
-                    autogenerate: { directory: "configuration" },
-                },
-                {
-                    label: "For Developers",
-                    autogenerate: { directory: "developers" },
                 },
             ],
             expressiveCode: {

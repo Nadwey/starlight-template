@@ -1,6 +1,5 @@
-# NadArenas docs
+# Starlight Template
 
-| Command       | Action                                      |
-| :------------ | :------------------------------------------ |
-| `npm install` | Installs dependencies                       |
-| `npm run dev` | Starts local dev server at `localhost:4321` |
+From the ashes of [NadArenas](https://github.com/Nadwey/NadArenas), a [Starlight](https://starlight.astro.build/) template is born.
+
+Because I hate the default theme.
