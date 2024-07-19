@@ -128,7 +128,7 @@ starlight-file-tree .comment {
 
 /* Badges */
 .sl-badge {
-    border: none;
-    padding: 0.25rem 0.5rem;
-    border-radius: 9999px;
+    border: none !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 9999px !important;
 }
