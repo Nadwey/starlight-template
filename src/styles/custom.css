@@ -91,7 +91,7 @@ starlight-file-tree {
 }
 
 starlight-file-tree .comment {
-    color: #6A9955;
+    color: #6A9955 !important;
 }
 
 /* Cards */
