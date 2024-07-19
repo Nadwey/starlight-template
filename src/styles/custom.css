@@ -106,13 +106,13 @@ starlight-file-tree .comment {
 }
 
 .sl-link-card:hover {
-    background-color: var(--sl-color-gray-6);
-    border-color: var(--sl-color-gray-4);
+    background-color: var(--sl-color-gray-6) !important;
+    border-color: var(--sl-color-gray-4) !important;
 }
 
 [data-theme="light"]
 .sl-link-card:hover {
-    background-color: var(--sl-color-gray-7);
+    background-color: var(--sl-color-gray-7) !important;
 }
 
 /* Asides */
