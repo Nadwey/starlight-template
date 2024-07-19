@@ -4,6 +4,7 @@ import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
 
 // https://astro.build/config
 export default defineConfig({
+    base: "/starlight-template/",
     integrations: [
         starlight({
             title: "Starlight Template",
@@ -18,6 +19,10 @@ export default defineConfig({
                 {
                     label: "👋 Welcome",
                     link: "/",
+                },
+                {
+                    label: "📄 Dummy Page",
+                    link: "/dummy",
                 },
             ],
             expressiveCode: {

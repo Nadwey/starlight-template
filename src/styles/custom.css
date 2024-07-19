@@ -49,6 +49,7 @@
     --sl-color-bg-inline-code: #eaeaea !important;
 }
 
+/* Layout */
 .site-title {
     color: var(--sl-color-white);
 }
@@ -61,12 +62,7 @@
     border: none !important;
 }
 
-starlight-file-tree {
-    background-color: var(--sl-color-gray-7) !important;
-    border-color: var(--ec-brdCol) !important;
-    border-radius: var(--ec-brdRad) !important;
-}
-
+/* Buttons */
 .action.primary {
     background: rgb(0,95,133);
     background: linear-gradient(162deg, rgba(0,95,133,1) 0%, rgba(184,0,160,1) 100%);
@@ -82,6 +78,57 @@ starlight-file-tree {
     color: white;
 }
 
+/* File tree */
+starlight-file-tree {
+    background-color: var(--sl-color-gray-7) !important;
+    border-color: var(--ec-brdCol) !important;
+    border-radius: var(--ec-brdRad) !important;
+}
+
+[data-theme="light"]
+starlight-file-tree {
+    background-color: var(--sl-color-black) !important;
+}
+
+starlight-file-tree .comment {
+    color: #6A9955;
+}
+
+/* Cards */
+.card {
+    background-color: var(--sl-color-black) !important;
+    border-radius: var(--ec-brdRad) !important;
+}
+
+/* Link Cards */
+.sl-link-card {
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.sl-link-card:hover {
+    background-color: var(--sl-color-gray-6);
+    border-color: var(--sl-color-gray-4);
+}
+
+[data-theme="light"]
+.sl-link-card:hover {
+    background-color: var(--sl-color-gray-7);
+}
+
+/* Asides */
 .starlight-aside {
     border-radius: 0.5rem;
+}
+
+/* Code */
+[data-theme="light"]
+.expressive-code .frame {
+    --code-background: var(--sl-color-black);
+}
+
+/* Badges */
+.sl-badge {
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
 }
